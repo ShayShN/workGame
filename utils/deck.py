@@ -7,9 +7,9 @@ def compare_cards(p1_card:dict, p2_card:dict) -> str:
     p1 = p1_card.get("value")
     p2 = p2_card.get("value")
     if p1 > p2:
-        return str(p1)
+        return "p1"
     if p1 < p2:
-        return str(p2)
+        return "p2"
     if p1 == p2:
         return "WAR"
    

@@ -23,4 +23,13 @@ def play_round(p1:dict,p2:dict):
     player1 = p1["hand"][0]
     player2 = p2["hand"][0]
     checking = f.compare_cards(player1, player2)
-    if checking == "p1"
+    if checking == "p1":
+        p1["won_pile"].append(player1)
+        p1["won_pile"].append(player2)
+    elif checking == "p2":
+        p2["won_pile"].append(player1)
+        p2["won_pile"].append(player2)
+    else:
+        return
+    return p1, p2
+        
